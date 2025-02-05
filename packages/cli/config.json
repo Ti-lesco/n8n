@@ -1,0 +1,10 @@
+{
+  "host": "n8n-kn80.onrender.com",
+  "port": 443,
+  "protocol": "https",
+  "endpoints": {
+    "webhook": {
+      "tunnel": "https://n8n-kn80.onrender.com"
+    }
+  }
+}
