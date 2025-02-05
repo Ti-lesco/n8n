@@ -21,3 +21,18 @@ services:
       - 5432:5432
     tmpfs:
       - /var/lib/postgresql/data
+
+  n8n:
+    image: n8nio/n8n
+    restart: always
+    ports:
+      - 5678:5678
+    environment:
+      - N8N_HOST=n8n-kn80.onrender.com
+      - N8N_PORT=443
+      - N8N_PROTOCOL=https
+      - WEBHOOK_TUNNEL_URL=https://n8n-kn80.onrender.com
+      - N8N_CONFIG_FILES=/config.json
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+      - ./config.json:/config.json
