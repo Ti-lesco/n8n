@@ -28,10 +28,10 @@ services:
     ports:
       - 5678:5678
     environment:
-      - N8N_HOST=https://n8n-kn80.onrender.com
+      - N8N_HOST=n8n-kn80.onrender.com
       - N8N_PORT=443
       - N8N_PROTOCOL=https
-      - WEBHOOK_TUNNEL_URL=https://n8n-kn80.onrender.com
+      - WEBHOOK_TUNNEL_URL=n8n-kn80.onrender.com
       - N8N_CONFIG_FILES=/config.json
     volumes:
       - ./n8n_data:/home/node/.n8n
