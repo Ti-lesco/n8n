@@ -1,5 +1,5 @@
 {
-  "host": "n8n-kn80.onrender.com",
+  "host": "https://n8n-kn80.onrender.com",
   "port": 443,
   "protocol": "https",
   "endpoints": {
